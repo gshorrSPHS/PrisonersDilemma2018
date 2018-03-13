@@ -34,7 +34,7 @@ def move(my_history, their_history, my_score, their_score):
         # check if they betray in the first 4 turns. If they did
         # we will betray, otherwise collude
     #have something for turns 3 & 4 when len is 2 & 3
-    if len(their_history) == 2 and 3:
+    if len(their_history) == 2 or len(their_history) == 3:
         return 'c'
     if 'b' == their_history[0] or 'b' == their_history[1]:
         return 'b'
