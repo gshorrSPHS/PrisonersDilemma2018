@@ -9,7 +9,7 @@ import random
 
 team_name = 'sophialind'  # Only 10 chars displayed.
 strategy_name = 'The sneak attack'
-strategy_description = 'When they betray we betray or every 10th'
+strategy_description = 'When they betray we betray or every 10 turns'
 
 
 def move(my_history, their_history, my_score, their_score):
@@ -36,8 +36,8 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     elif len(their_history)>2 and 'b' in their_history[-3]:
         return 'b'
-    # if any of the turns aren't divisible by 10 then collude
-    elif len(my_history) % 9 == 0 and len(my_history) != 0:
+    # if our history is divisible by 10 then collude
+    elif len(my_history) % 10 == 0 and len(my_history) != 0:
         return 'b'
     else:
         return 'c'
