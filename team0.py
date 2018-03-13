@@ -7,17 +7,10 @@
 ####
 import random 
 
-team_name = 'sample' # Only 10 chars displayed.
-strategy_name = 'always collude'
-strategy_description = 'Picks c always'
-    
-def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
-    
-    team_name = 'CopyCat'
+eam_name = 'CopyCat'
 team_strategy =  'Randomness and Luck'
 strategy_description = 'Start randomly and confuse the oppt. Then copy their move every other other. Everything else, betray,'
+    
 
 
 def move(my_history, their_history, my_score, their_score):
