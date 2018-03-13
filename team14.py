@@ -4,6 +4,8 @@
 
 def move(their_history, my_history, my_score, their_score):
     comply = False
+    if len(my_history) < 2:
+        return 'c'
     if 'c' in my_history[-1:] and 'c' not in my_history[-2:-1]:
         comply = True
     if comply:
@@ -15,3 +17,4 @@ def move(their_history, my_history, my_score, their_score):
             return 'c'
         if their_history.count('b') >= my_history.count('b'):
             return 'b'
+    return 'c'
