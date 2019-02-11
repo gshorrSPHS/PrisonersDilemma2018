@@ -7,7 +7,7 @@
 ####
 import random 
 
-eam_name = 'CopyCat'
+team_name = 'CopyCat'
 team_strategy =  'Randomness and Luck'
 strategy_description = 'Start randomly and confuse the oppt. Then copy their move every other other. Everything else, betray,'
     
